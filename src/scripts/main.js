@@ -12,6 +12,9 @@ const asparagusPlan = createAsparagus()
 
 import { plantSeeds } from "./tractor.js"
 const plantedSeeds = plantSeeds(yearlyPlan)
-console.log(plantedSeeds)
+//console.log(plantedSeeds)
 
 
+import { harvestPlants } from "./harvester.js"
+const harvestedPlants = harvestPlants(plantedSeeds)
+console.log(harvestedPlants)

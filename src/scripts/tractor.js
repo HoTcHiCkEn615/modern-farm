@@ -1,4 +1,4 @@
-import { addPlant, usePlant } from "./field.js"
+import { addPlant, usePlants } from "./field.js"
 import { createAsparagus } from "./seeds/asparagus.js"
 import { createCorn } from "./seeds/corn.js"
 import { createPotato } from "./seeds/potato.js"
@@ -27,8 +27,9 @@ export const plantSeeds = (parentPlan) => {
                 addPlant(newSunflower)
             } else if (plan === 'Wheat') {
                 const newWheat = createWheat()
+                addPlant(newWheat)
             }
         }
     }
-    return usePlant()
+    return usePlants()
 }

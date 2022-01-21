@@ -5,7 +5,7 @@ export const addPlant = (seedObj) => {
     return growingPlants
 }
 
-export const usePlant = () => {
+export const usePlants = () => {
     const copyOfPlants = growingPlants.map((seedObj) => ({...seedObj}) )
     return copyOfPlants
 }
